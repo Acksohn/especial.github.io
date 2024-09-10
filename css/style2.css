@@ -1,0 +1,154 @@
+body {
+    background-image: url('../img/fondo2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 475px;
+    text-align: center;
+    border: 1px solid rgb(241,241,241);
+    border-radius: 12px;
+    padding: 10px 20px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
+}
+
+.weapper h2 {
+    font-size: 30px;
+    color: #fffefe;
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field input[type="email"],
+.input-field input[type="password"] {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+    margin: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    width: 280px;
+    padding: 20px 40px 20px 20px;
+    backdrop-filter: blur(15px);
+    color: white;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: rgb(252, 252, 252);
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.input-field input[type="email"]:focus::placeholder,
+.input-field input[type="password"]:focus::placeholder {
+    transform: translateY(-100%);
+    transition: transform 0.2s ease-in-out;
+    font-size: 14px;
+}
+
+.input-field input[type="email"]:not(:focus)::placeholder,
+.input-field input[type="password"]:not(:focus)::placeholder {
+    transform: translateY(0%);
+    transition: transform 0.2s ease-in-out;
+    font-size: 16px;
+}
+
+a.forgot {
+    text-decoration: none;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+a.forgot:hover {
+    text-decoration: underline;
+    color: #fffffd;
+}
+
+a.sign-up {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.712);
+}
+
+a.sign-up:hover {
+    text-decoration: underline;
+    color: #fffffd;
+}
+
+.weapper .login {
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 45px;
+    width: 200px;
+    height: 30px;
+}
+
+#inicioGoogle{
+    background-color: white;
+    color: #312783;
+    border-radius: 50px;
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    border-color: #312783;
+}
+
+#inicioGoogle:hover{
+    background-color: #7CACF8;
+    color: black;
+    border-radius: 50px;
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    border-color: black;
+}
+
+.login{
+    background-color: white;
+    color: #312783;
+    border-radius: 50px;
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    border-color: #312783;
+}
+
+.login:hover{
+    background-color: #7CACF8;
+    color: black;
+    border-radius: 50px;
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    border-color: black;
+}
+
+#titulo{
+    font-size: 25px;
+    color: white;
+    font-family: cursive;
+}
